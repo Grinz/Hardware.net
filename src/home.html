@@ -3,25 +3,26 @@
     <head>
         <title>Hardware.net - Accueil</title>
 
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="style/materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="style/style.css"  media="screen,projection"/>
     </head>
     
     <body>
-        <nav class="white" role="navigation">
+        <nav class="teal" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" href="#" class="brand-logo">Logo</a>
+                <a id="logo-container" href="#" class="brand-logo"><i class="material-icons">polymer</i>Hardware.net</a>
                 <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
+                    <li><a href="sign-up.html">Création de compte</a></li>
                 </ul>
         
                 <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">Navbar Link</a></li>
+                    <li><a href="sign-up.html">Création de compte</a></li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             </div>
@@ -31,17 +32,17 @@
             <div class="section no-pad-bot">
                 <div class="container">
                     <br><br>
-                    <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+                    <h1 class="header center teal-text text-lighten-2">Hardware.net</h1>
                     <div class="row center">
-                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                        <h5 class="header col s12 light">Trouvez votre matériel informatique au meilleur prix !</h5>
                     </div>
                     <div class="row center">
-                        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+                        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Visiter la boutique en ligne</a>
                     </div>
                     <br><br>
                 </div>
             </div>
-            <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+            <div class="parallax"><img src="img/hardware-background.jpg" alt="Unsplashed background img 1"></div>
         </div>
 
         <div class="container">
@@ -81,7 +82,6 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat id nisi non tempus. Duis ut metus urna. Vestibulum luctus euismod eleifend. Etiam sed feugiat metus. Duis cursus ac lacus at congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam lectus lacus, faucibus sit amet mollis id, imperdiet et dolor. Integer quis vehicula lacus, ut aliquam elit. Maecenas quis venenatis sem. Proin ac risus consectetur ante porttitor auctor venenatis sit amet sapien. Nam ultricies turpis quam, sed elementum felis accumsan vel. Duis et diam non risus semper scelerisque.</p>
 
         <h1>Nos meilleures ventes du moment !</h1>
-        <p>This is a paragraph.</p>
 
         <p>Nos cartes graphiques</p>
         <table>
@@ -113,18 +113,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-            
-            
-        <div class="parallax-container valign-wrapper">
-            <div class="section no-pad-bot">
-                <div class="container">
-                    <div class="row center">
-                        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
         </div>
             
         <footer class="page-footer teal">
@@ -162,5 +150,10 @@
                 </div>
             </div>
         </footer>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="style/materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="style/init.js"></script>
     </body>
 </html>
