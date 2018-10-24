@@ -30,18 +30,19 @@
 
         <div class="container">
             <div class="row">
-                <form class="col s12 right-alert formValidate" id="formValidate" method="get" action novalidate="novalidate">
+                <form class="col s12 right-alert signupForm" id="signupForm" method="get" action novalidate="novalidate">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="material-icons prefix">account_circle</i>
                             <label for="firstName">Prénom</label>
-                            <input id="firstName" name="firstName" type="text" data-error=".errorTxt1">
-                            <div class="errorTxt1"></div>
+                            <input id="firstName" name="firstName" type="text" data-error=".errorFirstName">
+                            <span class="errorFirstName"></span>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">account_circle</i>
                             <label for="lastName">Nom de famille</label>
-                            <input id="lastName" type="text" class="validate">
+                            <input id="lastName" name="lastName" type="text" data-error=".errorLastName">
+                            <span class="errorLastName"></span>
                         </div>
 
                         <p>Civilité :</p>
@@ -61,7 +62,8 @@
                         <div class="input-field col s6">
                             <i class="material-icons prefix">phone</i>
                             <label for="phoneNumber">Numéro de téléphone</label>
-                            <input id="phoneNumber" type="text" class="validate">                            
+                            <input id="phoneNumber" name="phoneNumber" type="text" data-error=".errorPhoneNumber">     
+                            <span class="errorPhoneNumber"></span>
                         </div>
                     </div>
 
@@ -69,27 +71,31 @@
                         <div class="input-field col s12">
                             <i class="material-icons prefix">home</i>
                             <label for="address">Adresse postale</label>
-                            <input id="address" type="text" class="validate">
+                            <input id="address" name="address" type="text" data-error=".errorAddress">
+                            <span class="errorAddress"></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="material-icons prefix">home</i>
                             <label for="city">Ville</label>
-                            <input id="city" type="text" class="validate">                            
+                            <input id="city" name="city" type="text" data-error=".errorCity">       
+                            <span class="errorCity"></span>                     
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">home</i>
                             <label for="zipCode">Code postal</label>
-                            <input id="zipCode" type="text" class="validate">                            
+                            <input id="zipCode" name="zipCode" type="text" data-error=".errorZipCode">   
+                            <span class="errorZipCode"></span>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="material-icons prefix">mail</i>
-                            <input id="emailAddress" type="text" class="validate">
-                            <label for="emailAddress" data-error="wrong" data-success="right">Adresse e-mail</label>
+                            <label for="emailAddress">Adresse e-mail</label>
+                            <input id="emailAddress" name="emailAddress" type="email" data-error=".errorEmailAddress">
+                            <span class="errorEmailAddress"></span>
                         </div>
                     </div>
 
@@ -97,12 +103,14 @@
                         <div class="input-field col s6">
                             <i class="material-icons prefix">dialpad</i>
                             <label for="password">Mot de passe</label>
-                            <input id="password" type="password" class="validate">
+                            <input id="password" name="password" type="password" data-error=".errorPassword">
+                            <span class="errorPassword"></span>
                         </div>
                         <div class="input-field col s6">
                             <i class="material-icons prefix">dialpad</i>
                             <label for="passwordConfirmation">Confirmation du mot de passe</label>
-                            <input id="passwordConfirmation" type="password" class="validate">
+                            <input id="passwordConfirmation" name="passwordConfirmation" type="password" data-error=".errorPasswordConfirmation">
+                            <span class="errorPasswordConfirmation"></span>
                         </div>
                     </div>
                     <p>
@@ -112,7 +120,7 @@
                         </label>
                     </p>
 
-                    <button class="btn waves-effect waves-light" type="submit" name="action" onclick="checkEmptyFields(signupForm)">Confirmer l'inscription
+                    <button class="btn waves-effect waves-light right submit" type="submit" name="action">Confirmer l'inscription
                         <i class="material-icons right">send</i>
                     </button>
                 </form>
