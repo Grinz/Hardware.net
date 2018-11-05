@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hardware.net - Se connecter</title>
+        <title>Hardware.net - Connexion</title>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -30,30 +30,40 @@
 
         <div class="container">
             <div class="row">
-                <form class="col s12 right-alert accountInformationsForm" id="accountInformationsForm" method="get" action novalidate="novalidate">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">account_circle</i>
-                            <label for="emailAddress">Addresse e-mail</label>
-                            <input id="emailAddress" name="emailAddress" type="text">
-                        </div>
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">dialpad</i>
-                            <label for="password">Mot de passe</label>
-                            <input id="password" name="password" type="password">
-                        </div>
-                    </div>
+                <h4 class="purple-text text-darken-2 center">Connexion au compte client</h4>
 
-                    <div class="input-field col s12">
-                        <p class="center-align">
-                            <a href="#">Mot de passe oublié ?</a>
-                        </p>
+                <div class="card horizontal col s12">
+                    <div class="card-stacked col s12">
+                        <div class="card-content">
+                            <form class="col s12 right-alert accountInformationsForm" id="accountInformationsForm" method="get" action novalidate="novalidate">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <label for="emailAddress">Addresse e-mail</label>
+                                        <input id="emailAddress" name="emailAddress" type="text">
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">dialpad</i>
+                                        <label for="password">Mot de passe</label>
+                                        <input id="password" name="password" type="password">
+                                    </div>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <p class="center-align">
+                                        <a href="#">Mot de passe oublié ?</a>
+                                    </p>
+                                </div>
+                                
+                                <div class="row">
+                                    <button class="btn waves-effect waves-light right submit" type="submit" name="action">Se connecter
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    
-                    <button class="btn waves-effect waves-light submit" type="submit" name="action">Se connecter
-                        <i class="material-icons right">send</i>
-                    </button>
-                </form>
+                </div>
             </div>
         </div>
             
