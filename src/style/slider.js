@@ -4,7 +4,7 @@ $(document).ready(function() {
         start: [0, 1500],
         connect: true,
         step: 1,
-        orientation: 'horizontal', // 'horizontal' or 'vertical'
+        orientation: 'horizontal',
         range: {
             'min': 0,
             'max': 1500

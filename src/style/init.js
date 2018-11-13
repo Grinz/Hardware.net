@@ -1,10 +1,14 @@
-(function($) {
-  $(function() {
-
-    $('select').formSelect();
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-    $('.collapsible').collapsible();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+$(document).ready(function() {
+	$('select').formSelect();
+	$('.sidenav').sidenav();
+	$('.parallax').parallax();
+	$('.collapsible').collapsible();
+	$('.materialboxed').materialbox({
+		onOpenStart: function() {
+			$("#materialboxed").removeClass('offset-s6');
+		},
+		onCloseStart: function() {
+			$("#materialboxed").addClass('offset-s6');
+		}
+	});
+});
